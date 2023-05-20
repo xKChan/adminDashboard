@@ -57,6 +57,10 @@ gap: 10px;
   align-self: center;
 }
 
+.buttons button:hover {
+  cursor: pointer;
+}
+
 button#lastButton {
   margin-right: 70px;  
 }
@@ -184,6 +188,11 @@ button#lastButton {
   width: 30px;
 }
 
+.iconTitle a {
+  text-decoration: none;
+  color: #f1f5f9;
+}
+
 .icons {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
@@ -234,12 +243,13 @@ button#lastButton {
 .projects .title,
 .updates .title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .annoucementCard .card {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 17px;
+  padding-bottom: 5px;
 }
 
 
@@ -255,11 +265,25 @@ button#lastButton {
   border: 1px solid #f1f5f9;
   border-radius: 5px;
   background-color: #f1f5f9;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 15px;
-  padding: 30px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px 30px 25px 30px;
 }
+
+.announcementTextBorder {
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.accountmentText {
+  font-size: 12px;
+}
+
+.card > p {
+  font-size: 30px;
+}
+
 
 .trendingCard {
   border: 1px solid #f1f5f9;
@@ -268,6 +292,8 @@ button#lastButton {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  padding: 20px 0px 20px 0px;
+
 }
 
 .topMiniBar,
@@ -279,4 +305,27 @@ button#lastButton {
 .cards span {
 font-size: 20px;
 font-weight: bold;
+}
+
+.trendCard img {
+  width: 40px;
+  justify-self: end;
+}
+
+.trendCard {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+.trendingName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.trendingTitle {
+  padding-left: 10px;
+}
+
+.trendingTitle p {
+  font-style: italic;
 }
